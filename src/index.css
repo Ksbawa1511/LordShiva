@@ -1,0 +1,35 @@
+/* CSS Variables for Dark Blue Theme */
+:root {
+    --primary-color: #e8f4f8;
+    --secondary-color: #b8d4e3;
+    --accent-color: #5dade2;
+    --text-color: #e8f4f8;
+    --text-light: #a8c5d3;
+    --background-color: #1a2a3a;
+    --card-background: #243447;
+    --border-color: #2d4154;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --hover-color: #2d4154;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+

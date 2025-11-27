@@ -1,0 +1,15 @@
+/* Footer */
+footer {
+    background-color: var(--card-background);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+

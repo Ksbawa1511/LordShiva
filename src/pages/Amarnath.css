@@ -1,0 +1,123 @@
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, var(--card-background) 0%, #1e2f3f 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    box-shadow: 0 5px 20px var(--shadow-color);
+}
+
+.hero-content {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--card-background);
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.hero-text {
+    margin-top: 1.5rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.card h3 {
+    color: var(--secondary-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    color: var(--text-light);
+    line-height: 1.8;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.card ul li:before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
