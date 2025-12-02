@@ -1,11 +1,11 @@
 .hero {
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, var(--card-background) 0%, #1e2f3f 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 15px;
+    background: linear-gradient(135deg, #fff4e4 0%, #ffd3a6 100%);
+    border: 1px solid rgba(255, 193, 131, 0.5);
+    border-radius: 20px;
     padding: 3rem 2rem;
-    box-shadow: 0 5px 20px var(--shadow-color);
+    box-shadow: 0 18px 50px rgba(255, 176, 105, 0.3);
 }
 
 .hero h1 {
@@ -31,15 +31,15 @@
 .avatar-card {
     background-color: var(--card-background);
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px var(--shadow-color);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(118, 69, 27, 0.12);
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .avatar-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow-color);
+    box-shadow: 0 20px 40px rgba(118, 69, 27, 0.18);
 }
 
 .avatar-card h2 {
@@ -60,9 +60,10 @@
 .avatar-significance {
     margin: 3rem 0;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--card-background) 0%, #1e2f3f 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 15px;
+    background: linear-gradient(135deg, #fff4e4 0%, #ffe0bf 100%);
+    border: 1px solid rgba(255, 193, 131, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 18px 45px rgba(255, 176, 105, 0.25);
 }
 
 .avatar-significance h2 {
@@ -90,8 +91,8 @@
 .significance-item {
     background-color: var(--card-background);
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px var(--shadow-color);
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(118, 69, 27, 0.12);
     border: 1px solid var(--border-color);
 }
 

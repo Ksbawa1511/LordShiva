@@ -1,15 +1,15 @@
-/* CSS Variables for Dark Blue Theme */
+/* CSS Variables for Sunrise Theme */
 :root {
-    --primary-color: #e8f4f8;
-    --secondary-color: #b8d4e3;
-    --accent-color: #5dade2;
-    --text-color: #e8f4f8;
-    --text-light: #a8c5d3;
-    --background-color: #1a2a3a;
-    --card-background: #243447;
-    --border-color: #2d4154;
-    --shadow-color: rgba(0, 0, 0, 0.4);
-    --hover-color: #2d4154;
+    --primary-color: #fff8ee;
+    --secondary-color: #d88326;
+    --accent-color: #ffb347;
+    --text-color: #2f1c11;
+    --text-light: rgba(66, 43, 23, 0.75);
+    --background-color: #f7f1e8;
+    --card-background: #ffffff;
+    --border-color: rgba(255, 193, 131, 0.4);
+    --shadow-color: rgba(118, 69, 27, 0.18);
+    --hover-color: #ffe4c3;
 }
 
 /* Reset and Base Styles */
@@ -23,7 +23,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: linear-gradient(180deg, #fffdf8 0%, #f7f1e8 60%, #fff7eb 100%);
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
