@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ theme = 'light', onToggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -20,45 +17,52 @@ const Header = () => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const navItems = [
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/family', label: 'Family' },
+    { to: '/avatar', label: 'Avatar' },
+    { to: '/jyotirlingas', label: 'Jyotirlingas' },
+    { to: '/kedars', label: 'Kedars' },
+    { to: '/amarnath', label: 'Amarnath' },
+  ];
 
   return (
-    <header className={isScrolled ? 'scrolled' : ''}>
-      <nav>
-        <div className="left">
-          <Link to="/">Lord Shiva</Link>
-        </div>
-        <div className="right">
-          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className="nav">
+        <NavLink to="/" className="logo">
+          Lord Shiva
+        </NavLink>
+        <div className="nav-right">
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={() => onToggleTheme?.()}
+            aria-label="Toggle theme"
+            aria-pressed={theme === 'dark'}
+            title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          >
+            <span className="theme-icon">{theme === 'dark' ? '☀' : '☽'}</span>
+          </button>
+          <button
+            type="button"
+            className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
             <span></span>
             <span></span>
             <span></span>
-          </div>
-          <ul className={isMenuOpen ? 'active' : ''}>
-            <li>
-              <Link to="/" onClick={closeMenu}>Home</Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={closeMenu}>About</Link>
-            </li>
-            <li>
-              <Link to="/avatar" onClick={closeMenu}>Avatar</Link>
-            </li>
-            <li>
-              <Link to="/jyotirlingas" onClick={closeMenu}>Jyotirlingas</Link>
-            </li>
-            <li>
-              <Link to="/kedars" onClick={closeMenu}>Kedars</Link>
-            </li>
-            <li>
-              <Link to="/amarnath" onClick={closeMenu}>Amarnath</Link>
-            </li>
+          </button>
+          <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+            {navItems.map(({ to, label }) => (
+              <li key={to}>
+                <NavLink to={to} end={to === '/'} onClick={() => setIsMenuOpen(false)}>
+                  {label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

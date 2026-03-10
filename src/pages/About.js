@@ -70,6 +70,67 @@ const About = () => {
         </div>
 
         <div className="about-card">
+          <h2>Family Details</h2>
+          <p>Shiva's household at Mount Kailash is a blend of ascetic calm and affectionate family life, reflecting the union of detachment and devotion.</p>
+          <div className="family-members">
+            <h3>Key Relationships</h3>
+            <ul>
+              <li>Consort: Parvati (rebirth of Sati), the sustaining Shakti</li>
+              <li>Son: Ganesha, patron of beginnings, wisdom, and remover of obstacles</li>
+              <li>Son: Kartikeya (Skanda/Murugan), commander of the celestial hosts</li>
+              <li>Daughter: Ashokasundari, blessing of contentment and grace</li>
+              <li>Vahana: Nandi, the devoted bull and gatekeeper of Kailash</li>
+              <li>Companions: The ganas and Bhairava, symbols of protection and service</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-card">
+          <h2>Maa Sati (Adi Shakti)</h2>
+          <p>Maa Sati, the first incarnation of Shakti and daughter of King Daksha, embodied unwavering devotion to Shiva. Her sacrifice at Daksha's yajna and subsequent rebirth as Parvati rekindled the sacred union of Shiva and Shakti, giving rise to the Shakti Peethas revered across the subcontinent.</p>
+          <div className="spiritual-qualities">
+            <h3>Legacy and Significance</h3>
+            <ul>
+              <li>Born to Daksha and Prasuti, personifying pure devotion and resolve</li>
+              <li>Chose Shiva as her consort despite royal opposition</li>
+              <li>Self-immolated at Daksha's yajna to uphold dharma and honor</li>
+              <li>Reborn as Parvati, restoring cosmic balance and the divine household</li>
+              <li>Her body parts formed the sacred Shakti Peethas, honoring the power of the Divine Mother</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-card">
+          <h2>Festivals & Rituals</h2>
+          <p>Devotees celebrate Shiva with fasting, night-long vigils, mantra japa, and offerings that honor both his ascetic and householder aspects.</p>
+          <div className="teachings">
+            <h3>Key Observances</h3>
+            <ul>
+              <li>Maha Shivaratri: Night-long worship with Abhishekam, bel leaves, and Om Namah Shivaya japa</li>
+              <li>Shravan Somvar: Monday fasts in the holy month of Shravan to invoke grace and protection</li>
+              <li>Pradosh Vrat: Evening twilight worship (Trayodashi) for the removal of karmic obstacles</li>
+              <li>Kanwar Yatra: Devotees carry Ganga jal to offer at Shiva temples during Shravan</li>
+              <li>Karthik/Chaturdashi dips: River ablutions and lamp offerings honoring Shiva’s purifying aspect</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-card">
+          <h2>Sacred Shakti Peethas</h2>
+          <p>Where Sati’s essence is believed to have fallen, these Peethas celebrate the inseparable union of Shiva and Shakti and remain powerful centers of devotion.</p>
+          <div className="sacred-places">
+            <h3>Notable Peethas</h3>
+            <ul>
+              <li>Kamakhya (Assam) — Seat of Shakti’s creative power</li>
+              <li>Kalighat (Kolkata) — Fierce, protective mother aspect</li>
+              <li>Jwalamukhi (Himachal) — Eternal flame symbolizing cosmic energy</li>
+              <li>Hinglaj (Sindh/Balochistan) — Ancient desert shrine revered across borders</li>
+              <li>Kanchi Kamakshi (Tamil Nadu) — Compassionate, wish-fulfilling mother</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-card">
           <h2>Sacred Abodes</h2>
           <p>Shiva's primary abode is Mount Kailash in the Himalayas, where he meditates eternally. He is also present in countless temples across India and the world, particularly in the form of the sacred lingam.</p>
           <div className="sacred-places">

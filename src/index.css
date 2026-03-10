@@ -1,35 +1,110 @@
-/* CSS Variables for Sunrise Theme */
+/* Design System — Lord Shiva */
 :root {
-    --primary-color: #fff8ee;
-    --secondary-color: #d88326;
-    --accent-color: #ffb347;
-    --text-color: #2f1c11;
-    --text-light: rgba(66, 43, 23, 0.75);
-    --background-color: #f7f1e8;
-    --card-background: #ffffff;
-    --border-color: rgba(255, 193, 131, 0.4);
-    --shadow-color: rgba(118, 69, 27, 0.18);
-    --hover-color: #ffe4c3;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --primary: #1a1a2e;
+  --primary-soft: #2d2d44;
+  --accent: #c9a227;
+  --accent-light: #e6c04a;
+  --accent-muted: rgba(201, 162, 39, 0.15);
+  --text: #1a1a2e;
+  --text-muted: rgba(26, 26, 46, 0.72);
+  --surface: #ffffff;
+  --surface-elevated: #fafaf9;
+  --border: rgba(26, 26, 46, 0.08);
+  --shadow-sm: 0 1px 3px rgba(26, 26, 46, 0.06);
+  --shadow-md: 0 4px 12px rgba(26, 26, 46, 0.08);
+  --shadow-lg: 0 12px 40px rgba(26, 26, 46, 0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --on-accent: #1a1a2e;
 }
 
-/* Reset and Base Styles */
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --primary: #f5f0e8;
+  --primary-soft: #e8e2d8;
+  --accent: #d4af37;
+  --accent-light: #e6c04a;
+  --accent-muted: rgba(212, 175, 55, 0.12);
+  --text: #f5f0e8;
+  --text-muted: rgba(245, 240, 232, 0.75);
+  --surface: #16151f;
+  --surface-elevated: #1e1d2a;
+  --border: rgba(245, 240, 232, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --on-accent: #1a1a2e;
+}
+
+/* Legacy variable mapping for existing components */
+:root {
+  --primary-color: var(--surface);
+  --secondary-color: var(--accent);
+  --accent-color: var(--accent-light);
+  --text-color: var(--text);
+  --text-light: var(--text-muted);
+  --background-color: var(--surface-elevated);
+  --card-background: var(--surface);
+  --border-color: var(--border);
+  --shadow-color: var(--shadow-md);
+  --hover-color: var(--accent-muted);
+  --background-gradient: linear-gradient(180deg, #fafaf9 0%, #f5f3ef 100%);
+}
+
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --primary-color: var(--surface);
+  --secondary-color: var(--accent);
+  --accent-color: var(--accent-light);
+  --text-color: var(--text);
+  --text-light: var(--text-muted);
+  --background-color: #0f0d14;
+  --card-background: var(--surface);
+  --border-color: var(--border);
+  --shadow-color: var(--shadow-lg);
+  --hover-color: var(--accent-muted);
+  --background-gradient: linear-gradient(180deg, #0f0d14 0%, #16131d 50%, #1a1825 100%);
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #1e1d2a 0%, #16151f 100%) !important;
+  border-color: var(--border) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background: linear-gradient(180deg, #fffdf8 0%, #f7f1e8 60%, #fff7eb 100%);
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background-gradient);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
 }
-

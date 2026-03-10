@@ -378,3 +378,109 @@
     }
 }
 
+[data-theme="dark"] .amarnath-page {
+    background: linear-gradient(180deg, #15121d 0%, #0f0d15 45%, #181424 100%);
+    box-shadow: 0 22px 70px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .amarnath-hero {
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .hero-overlay {
+    background: linear-gradient(125deg, rgba(12, 15, 24, 0.92) 20%, rgba(46, 36, 18, 0.75) 80%);
+}
+
+[data-theme="dark"] .hero-eyebrow {
+    color: rgba(255, 214, 150, 0.8);
+}
+
+[data-theme="dark"] .hero-lede {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .primary-btn {
+    background: var(--accent-color);
+    color: #1a1108;
+    box-shadow: 0 10px 30px rgba(255, 179, 71, 0.35);
+}
+
+[data-theme="dark"] .ghost-btn {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: #fdf7ed;
+}
+
+[data-theme="dark"] .stat-card {
+    background: linear-gradient(150deg, #1f1c2a, #181624);
+    border: 1px solid rgba(255, 179, 71, 0.25);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .stat-card h3 {
+    color: #f5e7d6;
+}
+
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .stat-detail {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .timeline-step {
+    background: #191622;
+    border: 1px solid rgba(255, 179, 71, 0.2);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .timeline::before {
+    background: linear-gradient(180deg, var(--accent-color), transparent);
+}
+
+[data-theme="dark"] .travel-card {
+    background: linear-gradient(150deg, #1d1a27, #181624);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 179, 71, 0.22);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.38);
+}
+
+[data-theme="dark"] .experience-card {
+    background: #181624;
+    border: 1px solid rgba(255, 179, 71, 0.2);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .experience-body p,
+[data-theme="dark"] .section-header p,
+[data-theme="dark"] .essentials-card li {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .essentials-card {
+    background: #191622;
+    border: 1px solid rgba(255, 179, 71, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.32);
+}
+
+[data-theme="dark"] .amarnath-gallery {
+    background: linear-gradient(135deg, #1b1825, #15121d);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .gallery-item {
+    border: 1px solid rgba(255, 179, 71, 0.18);
+    background: #0f0d15;
+}
+
+[data-theme="dark"] .gallery-item img {
+    filter: brightness(0.95);
+}
+
+[data-theme="dark"] .callout-card {
+    background: linear-gradient(120deg, #2a2234, #1c1628);
+    color: var(--text-light);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.42);
+}
+
+[data-theme="dark"] .callout-card p {
+    color: var(--text-light);
+}
+
