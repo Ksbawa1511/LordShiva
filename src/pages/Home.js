@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -33,6 +34,17 @@ const Home = () => {
     };
   }, []);
 
+  const quickLinks = [
+    { to: '/about', label: 'About', desc: 'Divine essence & wisdom' },
+    { to: '/family', label: 'Family', desc: 'Parvati, Ganesha, Sati & more' },
+    { to: '/jyotirlingas', label: 'Jyotirlingas', desc: '12 sacred shrines' },
+    { to: '/kedars', label: 'Panch Kedars', desc: 'Five Himalayan temples' },
+    { to: '/mantras', label: 'Mantras', desc: 'Chants & their meaning' },
+    { to: '/festivals', label: 'Festivals', desc: 'Maha Shivaratri & more' },
+    { to: '/stories', label: 'Stories', desc: 'Legends & takeaways' },
+    { to: '/resources', label: 'Resources', desc: 'Guides & quick reference' },
+  ];
+
   return (
     <>
       <section className="hero">
@@ -42,6 +54,18 @@ const Home = () => {
             <h1>Lord Shiva</h1>
             <p>The Supreme Being in Shaivism</p>
           </div>
+        </div>
+      </section>
+
+      <section className="quick-links">
+        <h2>Explore</h2>
+        <div className="quick-links-grid">
+          {quickLinks.map(({ to, label, desc }) => (
+            <Link key={to} to={to} className="quick-link-card">
+              <span className="quick-link-label">{label}</span>
+              <span className="quick-link-desc">{desc}</span>
+            </Link>
+          ))}
         </div>
       </section>
 

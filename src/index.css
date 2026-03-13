@@ -108,3 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 code {
   font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
 }
+
+/* Accessibility: focus visible */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-muted);
+  color: var(--text);
+}

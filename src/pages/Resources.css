@@ -35,7 +35,7 @@
 .badge {
     display: inline-block;
     background: var(--accent-color);
-    color: #1d120c;
+    color: var(--on-accent);
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
     font-weight: 700;
